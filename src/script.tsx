@@ -5,7 +5,7 @@ import { getCanvas } from "./three/canvas";
 import { createScene } from "./three/scene";
 import { createCamera, createOrbitControls } from "./three/camera";
 import { createRenderer } from "./three/renderer";
-import { createCube } from "./three/models/cube";
+import { createSphere } from "./three/models/meshes";
 import { createAxesHelper } from "./three/models/axesHelper";
 import { setupResize } from "./three/resize";
 import { startAnimation } from "./three/animation";
@@ -28,8 +28,8 @@ const axesHelper = createAxesHelper({ size: 2 })
 scene.add(axesHelper)
 
 // --- Objects ---
-const cube = createCube({ size: 1, color: 'red' });
-scene.add(cube);
+const sphere = createSphere({ radius: 1, color: 'pink' });
+scene.add(sphere);
 
 // --- Renderer Setup ---
 const renderer = createRenderer({canvas});
