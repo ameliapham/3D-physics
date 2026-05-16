@@ -1,4 +1,5 @@
 import GUI from "lil-gui"
+import * as CANNON from "cannon-es"
 
 import { getCanvas } from "./three/canvas";
 import { createScene } from "./three/scene";
